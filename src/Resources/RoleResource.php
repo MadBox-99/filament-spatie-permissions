@@ -23,6 +23,8 @@ final class RoleResource extends Resource
 {
     protected static ?string $model = Role::class;
 
+    protected static bool $isScopedToTenant = false;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedShieldCheck;
 
     protected static ?int $navigationSort = 1;

@@ -1,5 +1,5 @@
 {
-    "name": "madbox/filament-spatie-permissions",
+    "name": "madbox-99/filament-spatie-permissions",
     "description": "Filament v5 plugin for managing Spatie roles and permissions with enum-driven sync",
     "type": "library",
     "license": "MIT",
