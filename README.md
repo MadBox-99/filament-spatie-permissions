@@ -20,9 +20,9 @@ A **Filament v5** plugin for managing [Spatie Laravel Permission](https://github
 
 ## Requirements
 
-- PHP 8.2+
-- Laravel 12+
-- Filament 5.0+
+- PHP 8.3+
+- Laravel 11+
+- Filament 4.0+ / 5.0+
 - Spatie Laravel Permission 6.0+
 
 ## Installation
