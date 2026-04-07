@@ -4,18 +4,17 @@ declare(strict_types=1);
 
 namespace MadBox\FilamentSpatiePermissions\Commands;
 
-use Illuminate\Console\Attributes\Description;
-use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 use MadBox\FilamentSpatiePermissions\FilamentSpatiePermissionsPlugin;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;
 
-#[Signature('permissions:sync')]
-#[Description('Sync all permissions and roles from enums to the database')]
 final class SyncPermissionsCommand extends Command
 {
+    protected $signature = 'permissions:sync';
+
+    protected $description = 'Sync all permissions and roles from enums to the database';
     public function handle(): int
     {
         $plugin = app(FilamentSpatiePermissionsPlugin::class);
